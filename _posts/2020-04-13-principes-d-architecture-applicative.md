@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Les 3 piliers de l'architecture de Pix"
-date:   2020-03-02 00:00:01 +0200
+title:  "Principes d'architecture applicative"
+date:   2020-04-13 19:32:00 +0200
 categories: architecture
 excerpt_separator: <!--more-->
+cover_image: "principes-d-architecture-applicative.jpg"
 ---
 
 L'architecture de Pix est construite autour de 3 propriétés applicatives et leurs contraintes respectives : 

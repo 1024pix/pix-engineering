@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Les 3 piliers de la sécurité technique chez Pix"
-date:   2020-02-14 00:00:01 +0200
+title:  "Principes de sécurité"
+date:   2020-04-13 19:33:00 +0200
 categories: architecture securité
 excerpt_separator: <!--more-->
+cover_image: "principes-de-securite.jpg"
 ---
 
 D'un point de vue technique et applicatif, Pix repose sur les 3 principes directeurs suivants :
