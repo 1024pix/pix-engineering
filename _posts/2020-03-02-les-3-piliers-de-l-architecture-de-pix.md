@@ -3,7 +3,17 @@ layout: post
 title:  "Les 3 piliers de l'architecture de Pix"
 date:   2020-03-02 00:00:01 +0200
 categories: architecture
+excerpt_separator: <!--more-->
 ---
+
+L'architecture de Pix est construite autour de 3 propriétés applicatives et leurs contraintes respectives : 
+
+- User centric architecture, 
+- Platform oriented architecture
+- API-based architecture
+
+<!--more-->
+
 ## 1. User Centric Architecture
 
 D'un point de vue architecture Pix a été conçu comme une galaxie avec des planètes, une par usage / typologie d'utilisateurs :

@@ -3,8 +3,12 @@ layout: post
 title:  "Product Teams"
 date:   2020-02-14 00:01:00 +0200
 categories: organisation product teams
+excerpt_separator: <!--more-->
 ---
+
 Côté développement de services numériques, Pix est organisé en Product Teams, aussi appelées Equipix(s).
+
+<!--more-->
 
 ## Définition
 
