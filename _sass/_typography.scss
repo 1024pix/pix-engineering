@@ -1,5 +1,49 @@
 @import 'marianne';
+@import "colors";
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: Marianne, Arial, sans-serif;
+  font-size: 16px;
 }
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+ul, pre, code, p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: $blue-primary!important;
+}
+
+.post-content {
+
+  h2 {
+    margin-top: 60px;
+  }
+
+  h3 {
+    margin-top: 40px;
+  }
+}
+
