@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Produt Teams"
+title:  "Product Teams"
 date:   2020-02-14 00:01:00 +0200
 categories: organisation product teams
 ---
