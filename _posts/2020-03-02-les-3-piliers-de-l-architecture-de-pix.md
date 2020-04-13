@@ -117,10 +117,10 @@ Ex : fournir une API sécurisée opérationnelle et pertinente (échanges extern
 
 On considère 4 types de données : 
 
--les données à caractère juridique ou d'archivage (logs, fichiers à valeur de preuve, scans, etc.)
--les données référentielles, de type contenu pédagogique 
--les données générées par les utilisateurs, leurs interactions et leurs usages (comptes, évaluations, réponses, snapshots, organisation, campagnes, etc.)
--les données éditoriales ou marketing
+- les données à caractère juridique ou d'archivage (logs, fichiers à valeur de preuve, scans, etc.)
+- les données référentielles, de type contenu pédagogique 
+- les données générées par les utilisateurs, leurs interactions et leurs usages (comptes, évaluations, réponses, snapshots, organisation, campagnes, etc.)
+- les données éditoriales ou marketing
 
 Quelque soit le type de données, elles ne doivent être accédées ou remontées aux utilisateurs / applications front qu'au travers d'API(s) métier.
 
