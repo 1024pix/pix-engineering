@@ -3,9 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <h1 class="page-heading">Le blog technologique de Pix</h1>
 
   <div class="wrapper">
     {{ content }}
@@ -28,31 +26,20 @@ layout: default
       <li class="post-card">
         <a class="post-link" href="{{ post.url | relative_url }}">
           <header>
-            <img class="post-cover" src="/assets/images/covers/{{ post.cover_image }}">
+            <div class="post-cover" style="background-image: url('/assets/images/covers/{{ post.cover_image }}')"></div>
           </header>
           <section>
             <h3 class="post-tiel">{{ post.title | escape }}</h3>
             {%- if site.show_excerpts -%}
-            <div class="post-excerpt">
-            {{ post.excerpt }}
-            </div>
+            <p class="post-excerpt">
+              {{ post.excerpt }}
+            </p>
             {%- endif -%}
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ post.date | date: date_format }}
+            </time>
           </section>
-          <footer>
-            <div class="post-meta">
-              <div class="post-meta__avatar">
-                <img class="post-avatar" src="/assets/images/pix-logo.svg">
-              </div>
-              <div class="post-meta__data">
-                <span class="post-author">Team Pix</span>
-
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                  {{ post.date | date: date_format }}
-                </time>
-              </div>
-            </div>
-          </footer>
         </a>
       </li>
       {%- endfor -%}
