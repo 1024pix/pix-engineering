@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="home">
-  <div class="wrapper">
-    {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
 
+  <div class="wrapper">
     {{ content }}
 
 
@@ -23,24 +23,35 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
     <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
       {%- for post in posts -%}
       <li class="post-card">
         <a class="post-link" href="{{ post.url | relative_url }}">
-        <header>
-            <section>
-              <span class="post-type">Article</span><br>
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3>{{ post.title | escape }}</h3>
-            </section>
+          <header>
+            <img class="post-cover" src="/assets/images/covers/{{ post.cover_image }}">
           </header>
           <section>
+            <h3 class="post-tiel">{{ post.title | escape }}</h3>
             {%- if site.show_excerpts -%}
+            <div class="post-excerpt">
             {{ post.excerpt }}
+            </div>
             {%- endif -%}
           </section>
           <footer>
-            <section></section>
+            <div class="post-meta">
+              <div class="post-meta__avatar">
+                <img class="post-avatar" src="/assets/images/pix-logo.svg">
+              </div>
+              <div class="post-meta__data">
+                <span class="post-author">Team Pix</span>
+
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                  {{ post.date | date: date_format }}
+                </time>
+              </div>
+            </div>
           </footer>
         </a>
       </li>

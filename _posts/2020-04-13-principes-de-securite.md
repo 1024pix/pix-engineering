@@ -3,7 +3,7 @@ layout: post
 title:  "Principes de sécurité"
 date:   2020-04-13 19:33:00 +0200
 categories: architecture securité
-excerpt_separator: <!--more-->
+excerpt: Principes de sécurité technique que nous nous appliquons et qui guident nos choix de design applicatif.
 cover_image: "principes-de-securite.jpg"
 ---
 
@@ -12,8 +12,6 @@ D'un point de vue technique et applicatif, Pix repose sur les 3 principes direct
 - Humility Driven Policy
 - Less (personal data) is more (people tranquility)
 - The closer to the data, the more safety features
-
-<!--more-->
 
 ## 1. Humility Driven Policy
 

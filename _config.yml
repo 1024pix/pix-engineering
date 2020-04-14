@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Pix Engineering
+lang: fr
+title: Pix TechBlog
 email: engineering@pix.fr
 description: >- # this means to ignore newlines until "baseurl:"
   Histoires, actualités et annonces des équipes de développement de services numériques de Pix

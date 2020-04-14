@@ -3,13 +3,11 @@ layout: post
 title:  "Product Teams"
 date:   2020-04-13 19:34:00 +0200
 categories: organisation product teams
-excerpt_separator: <!--more-->
+excerpt: Plutôt que des équipes projet ou technologogiques, nous privilégions des équipes produit agiles centrées sur les utilisateurs et leurs probèmes.
 cover_image: "product-teams.jpg"
 ---
 
 Côté développement de services numériques, Pix est organisé en Product Teams, aussi appelées Equipix(s).
-
-<!--more-->
 
 ## Définition
 

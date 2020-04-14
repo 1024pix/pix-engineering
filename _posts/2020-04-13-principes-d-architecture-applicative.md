@@ -3,7 +3,7 @@ layout: post
 title:  "Principes d'architecture applicative"
 date:   2020-04-13 19:32:00 +0200
 categories: architecture
-excerpt_separator: <!--more-->
+excerpt: Lignes directrices pour la conception et le développement d'un système d'information pour le très grand public.
 cover_image: "principes-d-architecture-applicative.jpg"
 ---
 
@@ -12,8 +12,6 @@ L'architecture de Pix est construite autour de 3 propriétés applicatives et le
 - User centric architecture, 
 - Platform oriented architecture
 - API-based architecture
-
-<!--more-->
 
 ## 1. User Centric Architecture
 

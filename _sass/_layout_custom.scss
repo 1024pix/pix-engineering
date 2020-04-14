@@ -6,6 +6,15 @@
 .site-header {
   border: none;
   min-height: 90px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.site-footer {
+  background-color: $white;
 }
 
 /**
@@ -14,24 +23,41 @@
 .page-content {
   padding: 0;
 }
+.page-heading {
+  color: $white;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(56, 138, 255, 1), rgba(152, 95, 255, 1));
+}
 
 .post-list {
-  margin: 0;
+  margin: 40px 0;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
+  grid-gap: 40px;
 
   > li.post-card {
-    margin-bottom: 20px;
-    border: 1px solid grey;
-    color: #333;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    margin-bottom: 0;
+    background: #fff;
+    color: #26353f;
 
     a.post-link {
       font-size: 1rem;
       color: inherit !important;
-      padding: 40px;
+      height: 100%;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1px 4px #c9d3df;
+      box-shadow: 0 1px 4px #c9d3df;
+      border: 1px solid #c9d3df;
 
       &:active,
       &:focus,
@@ -39,6 +65,17 @@
       &:visited {
         text-decoration: none;
       }
+
+      section {
+        padding: 30px;
+      }
+    }
+    .post-cover {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
     }
 
     .post-type {
@@ -46,7 +83,29 @@
     }
 
     .post-meta {
-      color: inherit;
+      padding: 0 30px 30px;
+      display: flex;
+      flex-direction: row;
+      color: #767071;
+    }
+
+    .post-avatar {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      padding: 5px;
+      border: 1px solid #c9d3df;
+      margin-right: 10px;
+    }
+
+    .post-author {
+      display: block;
+      font-weight: bold;
+    }
+
+    .post-excerpt {
+      color: #888888;
+      font-size: 14px;
     }
   }
 }
@@ -59,6 +118,7 @@
  * Posts
  */
 .post {
+  background-color: $white;
 
   .wrapper {
     max-width: 800px;
@@ -81,9 +141,11 @@
 }
 
 .post-content {
+  margin-bottom: 0;
+
   ul, pre, code, p {
+    margin-top: 1.25rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
   }
 }
 
