@@ -15,6 +15,42 @@
   padding: 0;
 }
 
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+
+  > li.post-card {
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    color: #333;
+
+    a.post-link {
+      font-size: 1rem;
+      color: inherit !important;
+      padding: 40px;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:visited {
+        text-decoration: none;
+      }
+    }
+
+    .post-type {
+      font-weight: bold;
+    }
+
+    .post-meta {
+      color: inherit;
+    }
+  }
+}
+
 .post-meta {
   color: $white;
 }
@@ -22,9 +58,16 @@
 /**
  * Posts
  */
+.post {
+
+  .wrapper {
+    max-width: 800px;
+  }
+}
+
 .post-header {
   min-height: 320px;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
   color: $white;
   text-align: center;
   display: flex;

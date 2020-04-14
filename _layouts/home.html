@@ -25,16 +25,24 @@ layout: default
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-        {%- endif -%}
+      <li class="post-card">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        <header>
+            <section>
+              <span class="post-type">Article</span><br>
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>{{ post.title | escape }}</h3>
+            </section>
+          </header>
+          <section>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+          </section>
+          <footer>
+            <section></section>
+          </footer>
+        </a>
       </li>
       {%- endfor -%}
     </ul>
