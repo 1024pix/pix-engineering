@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engineering.pix.fr" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: pix_engineering
 github_username:  1024pix
+#paginate: 9
 
 # Build settings
 theme: minima
