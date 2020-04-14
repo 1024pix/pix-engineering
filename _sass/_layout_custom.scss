@@ -32,7 +32,7 @@
 .page-content {
   padding: 0;
 }
-.page-heading {
+.page-headings {
   color: $white;
   min-height: 200px;
   display: flex;
@@ -40,6 +40,10 @@
   align-items: center;
   justify-content: center;
   background: $blue-primary;
+}
+
+.page-subheading {
+  color: #fefefe;
 }
 
 .home {

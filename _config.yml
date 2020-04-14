@@ -22,7 +22,7 @@ lang: fr
 title: Le blog technix
 email: engineering@pix.fr
 description: >- # this means to ignore newlines until "baseurl:"
-  Histoires, actualités et annonces des équipes de développement de services numériques de Pix
+  Articles, actualités et aventures techniques des équipes Pix.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engineering.pix.fr" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: pix_engineering
