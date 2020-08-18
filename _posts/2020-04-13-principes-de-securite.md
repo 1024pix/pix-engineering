@@ -62,8 +62,6 @@ Il arrive parfois que nous maîtrisions vraiment un sujet ou une solution, parce
 
 Le risque dans ce genre de situation est de repousser un sujet important jusqu'au dernier moment, en pensant gérer, et de se retrouver finalement dépassé par les évènements. Là encore, la sécurité est un domaine qui s'arrange le moins bien avec ce type de déviance et les conséquences peuvent être critiques ou définitives, en particulier pour une jeune entreprise comme Pix.
 
-Ex : Pix est accompagné par le cabinet d'avocats Bensoussan dans ses chantiers juridiques et RGPD.
-
 Ex : Pix est accompagné par le Ministère de l'Education nationale dans le chantier "intégration de Pix dans les ENT en vue du déploiement pour les publics scolaires".
 
 ## 2. Less (personal data) is more (people tranquility)
@@ -95,8 +93,6 @@ Les données personnelles les plus sensibles stockées pour un utilisateur aujou
 - ses réponses
 - ses résultats
 - les signalements de tout utilisateur (connecté ou non, avec un email ou non)
-
-Ex : dans les premiers échanges avec la Gendarmerie Nationale, il a été évoqué la possibilité de stocker l'ID Gend des gendarmes. Nous nous sommes finalement mis d'accord sur un ID Pix, qui est une sous-chaîne d'un hash réversible basé sur l'ID Gen (et/ou d'autres informations que Pix n'a pas à connaître). Et qui, en cas de fuite des données, ne permet pas de rattacher directement le compte Pix au gendarme.
 
 Ex : ce même système est repris dans la cadre de la connexion à Pix depuis les ENT via EduConnect. Plutôt que d'utiliser l'ID Educ. Nat., nous utiliserons et stockerons un ID Pix particulier rattaché, non pas au compte Pix directement, mais à un "MoyenDeConnexion" de type ENT.
 

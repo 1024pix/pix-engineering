@@ -18,7 +18,7 @@ Avec l’évolution du nombre d’utilisateurs / partenaires / clients / collabo
 - **Monitorer** : mettre en place des dashboards et systèmes pour surveiller la prod en temps réel et pouvoir anticiper les besoins futurs.
 - **Réparer** : lorsqu’un incident se produit, être en mesure de relancer la prod rapidement.
 - **Entretenir** : faire évoluer la prod, renforcer ses points faibles pour éviter les incidents.
-- **Former**  : capitaliser l’expérience de la team Capitaines de la Prod pour permettre au reste de l'équipe de monter en compétence sur les sujets notamment SRE. 
+- **Former** : capitaliser l’expérience de la team Capitaines de la Prod pour permettre au reste de l'équipe de monter en compétence sur les sujets notamment SRE. 
 - **Informer** : Communiquer au reste de Pix de manière à prendre les mesures pour gérer les crises et avertir les utilisateurs dans les meilleures conditions.
 
 ## Objectifs
@@ -27,8 +27,8 @@ Avec l’évolution du nombre d’utilisateurs / partenaires / clients / collabo
   - être alerté d’un problème de production < 1 mn
 - Gestion de crise ou d’incidents : 
   - remettre le système en état de fonctionner < 10 mn
-  -corriger le problème de façon pérenne < 10 jours ouvrés
-  -s’organiser, communiquer et réagir de sorte à générer < 10 tickets Freshdesk
+  - corriger le problème de façon pérenne < 10 jours ouvrés
+  - s’organiser, communiquer et réagir de sorte à générer < 10 tickets Freshdesk
 - Formation : 
   - 2/3 devs se sentent à l'aise (>= 3/5) à prendre et assumer le rôle de capitaine
 
