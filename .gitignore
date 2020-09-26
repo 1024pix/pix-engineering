@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# IDE
+**/.idea
+!.idea/runConfigurations/*.xml
+*.iml
