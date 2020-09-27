@@ -7,7 +7,7 @@ excerpt: Introduction à une série d'articles portant sur l'_index B-Tree_ en b
 cover_image: "les-index-b-tree-postgresql-intro.jpeg"
 ---
 
-Nous avons choisi d'utiliser le **système de gestion de base de données relationnelle** **_PostgreSQL_**.
+Nous avons choisi d'utiliser le **système de gestion de base de données relationnelle** **_PostgreSQL_**.  
 J'insiste et je tiens à utiliser ce terme long et pompeux, car qualifier **_PostgreSQL_** ou tout autre système de ce genre simplement de base de données est une lourde erreur.  
 Un **SGBD** n'est pas seulement un coffre fourre-tout dans lequel on laisse dédaigneusement nos données. C'est un outil puissant de stockage, d'analyse et de collecte de données.
 
@@ -29,9 +29,9 @@ En _SQL_, cela donnerait à peu près quelque chose comme ça :
 SELECT COUNT(*) FROM "individuals" WHERE "first_name" = 'Aïda';
 ```
 Cela met en évidence la différence fondamentale entre le fait d'écrire du code dans notre travail de développeur web
-de "tous les jours" et d'écrire du _SQL_.
+de "tous les jours" et d'écrire du _SQL_.  
 Dans le premier cas, on doit expliciter le **_comment_**, alors que dans le second cas, on se contente simplement
-d'exprimer le **_quoi_**, c'est-à-dire ce qu'on veut, mais pas comment l'obtenir.
+d'exprimer le **_quoi_**, c'est-à-dire ce qu'on veut, mais pas comment l'obtenir.  
 Le SGBD parcourt-il toute la table comme nous l'avons fait pour notre code ? Garde t'il un compteur interne pour chaque prénom incrémenté à chaque modification ? Ou encore, répond-il aléatoirement :game_die: ?
 
 ### Le place du dév dans les perfs en base de données
