@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Série sur l'index B-Tree : introduction"
+date:   2020-09-27 15:30:00 +0200
+categories: architecture
+excerpt: Introduction à une série d'articles portant sur l'_index B-Tree_ en base de données relationnelle PostgreSQL.
+cover_image: "les-index-b-tree-postgresql-intro.jpeg"
+---
+
 Nous avons choisi d'utiliser le **système de gestion de base de données relationnelle** **_PostgreSQL_**.
 J'insiste et je tiens à utiliser ce terme long et pompeux, car qualifier **_PostgreSQL_** ou tout autre système de ce genre simplement de base de données est une lourde erreur.  
 Un **SGBD** n'est pas seulement un coffre fourre-tout dans lequel on laisse dédaigneusement nos données. C'est un outil puissant de stockage, d'analyse et de collecte de données.
