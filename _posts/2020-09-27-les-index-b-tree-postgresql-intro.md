@@ -32,7 +32,7 @@ Cela met en évidence la différence fondamentale entre le fait d'écrire du cod
 de "tous les jours" et d'écrire du _SQL_.
 Dans le premier cas, on doit expliciter le **_comment_**, alors que dans le second cas, on se contente simplement
 d'exprimer le **_quoi_**, c'est-à-dire ce qu'on veut, mais pas comment l'obtenir.
-Le SGBD parcourt-il toute la table comme nous l'avons fait pour notre code ? Garde t'il un compteur interne pour chaque prénom incrémenté à chaque modification ? Ou encore, répond-il aléatoirement :poker: ?
+Le SGBD parcourt-il toute la table comme nous l'avons fait pour notre code ? Garde t'il un compteur interne pour chaque prénom incrémenté à chaque modification ? Ou encore, répond-il aléatoirement :game_die: ?
 
 ### Le place du dév dans les perfs en base de données
 Il est acceptable pour un développeur de ne pas avoir de connaissances là-dessus pour deux raisons: 
@@ -70,7 +70,7 @@ Ce sont les index les plus communs (ce sont eux derrière la commande `CREATE IN
 ### Au menu
 
 _**Partie 1 :**_ [Définition d'un _index B-Tree_, exemples et mise en place concrète]({% post_url 2020-09-28-les-index-b-tree-postgresql-partie-1 %})  
-_**Partie 2 :**_ :detective_female: "Au secours ma requête est lente", ou comment identifier les candidats à l'indexation  
+_**Partie 2 :**_ "Au secours ma requête est lente", ou comment identifier les candidats à l'indexation  
 _**Partie 3 :**_ Index-only scan, conseils généraux et résumé des take-aways / cheat-sheet  
 _**Partie 4 :**_ Présentation succincte des autres types d'index  
 
