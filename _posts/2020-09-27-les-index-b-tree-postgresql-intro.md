@@ -69,7 +69,7 @@ Ce sont les index les plus communs (ce sont eux derrière la commande `CREATE IN
 
 ### Au menu
 
-_**Partie 1 :**_ Définition d'un _index B-Tree_, exemples et mise en place concrète  
+_**Partie 1 :**_ [Définition d'un _index B-Tree_, exemples et mise en place concrète]({% post_url 2020-09-28-les-index-b-tree-postgresql-partie-1 %})  
 _**Partie 2 :**_ :detective_female: "Au secours ma requête est lente", ou comment identifier les candidats à l'indexation  
 _**Partie 3 :**_ Index-only scan, conseils généraux et résumé des take-aways / cheat-sheet  
 _**Partie 4 :**_ Présentation succincte des autres types d'index  
