@@ -17,6 +17,9 @@ git clone git@github.com:1024pix/pix-engineering.git
 cd pix-engineering
 bundle install
 bundle exec jekyll serve
+
+# To test posts whose publication is set to a future date
+bundle exec jekyll serve -- future
 ```
 
 You can access application at http://localhost:4000
