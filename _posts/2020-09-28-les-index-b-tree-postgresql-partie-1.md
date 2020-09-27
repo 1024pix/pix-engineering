@@ -24,7 +24,7 @@ La structure d'un _index B-Tree_ doit donc faire face à deux contraintes majeur
 - Conserver, en tout temps, l'ordre défini  
 
 C'est pourquoi la structure d'un _index B-Tree_ est en fait la combinaison d'un arbre de recherche et d'une liste doublement chaînée :
-![image info](../assets/images/post_index-b-tree/index-b-tree-general.png)
+![image info](/assets/images/post_index-b-tree/index-b-tree-general.png)
 
 ### Zoom sur l'arbre de recherche équilibré
 Les propriétés d'un arbre de recherche équilibré sont :
@@ -35,7 +35,7 @@ Un arbre est constitué de plusieurs nœuds. Chaque nœud non-feuille contient d
 La valeur de référence est en fait la valeur la plus grande présente dans le nœud enfant pointé.  
 Lorsqu'on recherche une valeur, l'arbre est parcouru de la manière suivante : on commence par le nœud racine. On parcourt chaque élément par ordre **ascendant**. Dès lors que la valeur de référence de l'élément évalué est **supérieure ou égale** à la valeur recherchée, alors on suit le pointeur de l'élément vers son noœud enfant.
 On répète l'opération jusqu'à arriver au nœud feuille dans lequel se trouve la valeur recherchée.  
-![image info](../assets/images/post_index-b-tree/index-b-tree-tree.png)
+![image info](/assets/images/post_index-b-tree/index-b-tree-tree.png)
 
 ### Zoom sur la liste doublement chaînée
 Les propriétés de la liste doublement chaînée sont :
@@ -46,7 +46,7 @@ Les nœuds feuilles de l'arbre sont organisés en liste doublement chaînée. Ai
 Ainsi, lorsqu'une nouvelle valeur est ajoutée, on évite de décaler l'ensemble des données d'un cran (ce qui revient à tout réécrire en somme). On va plutôt se positionner sur le nœud feuille adapté s'il y a de la place, à défaut en créer un nouveau.
 Il suffira de mettre à jour les liens entre les différents nœuds et le tour est joué. Le contenu d'un nœud feuille diffère des autres nœuds : chacun de ses éléments, toujours classés dans l'ordre défini, est porteur de la valeur de référence bien sûr, mais aussi de l'adresse mémoire de la ligne correspondante dans la table d'origine.
 Dans **_PostgreSQL_**, il s'agit du `ctid`.  
-![image info](../assets/images/post_index-b-tree/index-b-tree-leaf.png)
+![image info](/assets/images/post_index-b-tree/index-b-tree-leaf.png)
 
 > Idée reçue : les lignes d'une table sont rangées en mémoire dans l'ordre de la clé primaire (`id`), et ça explique pourquoi je reçois les lignes dans l'ordre de l'`id` lorsque je ne spécifie aucun ordre de tri.  
 >**C'est faux!** Les lignes sont écrites en mémoire selon des règles complexes et en fonction de l'espace disponible (qui peut changer surtout après un passage de `VACUUM`). Bref, retenez que l'ordre de présentation des résultats d'un `SELECT` sans clause de tri n'est **pas** déterministe et peut changer d'une exécution à l'autre.
