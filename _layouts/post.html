@@ -12,7 +12,7 @@ layout: default
     <div class="wrapper">
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       <p class="post-meta">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
         <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {{ page.date | date: date_format }}
         </time>
@@ -41,35 +41,44 @@ layout: default
   </div>
 
   {%- if page.authors -%}
-  <div class="post-authors">
-    <div class="wrapper">
+  <div class="post-authors wrapper">
       {% for item in page.authors %}
       {% assign author = site.data.authors[item] %}
-      <div class="post-author" style="display: flex;">
+      <div class="post-author">
         <div>
           <img class="post-author__picture" src="/assets/images/authors/{{ item }}.png" alt="{{ author.name }}">
         </div>
         <div>
           <h3 class="post-author__name">{{ author.name }}</h3>
           <p class="post-author__description">{{ author.description }}</p>
-          <div class="post-author__links">
-            {%- if author.linkedin -%}
-            <a class="post-author__link" href="https://linkedin.com/in/{{ author.linkedin }}">LinkedIn</a>
+          {%- if author.links -%}
+          <ul class="post-author__links">
+            {%- if author.links.github -%}
+            <li class="post-author__link">
+              <a rel="me" target="pix-blog_github" href="https://linkedin.com/in/{{ author.links.github | escape }}" title="Naviguer vers le profil GitHub {{ author.links.github | escape }}">
+                <svg class="icon icon-github"><use xlink:href="{{ '/assets/images/icons.svg#icon-github' | relative_url }}"></use></svg>
+              </a>
+            </li>
             {%- endif -%}
-            {%- if author.github -%}
-            <a class="post-author__link" href="https://github.com/{{ author.github }}">GitHub</a>
+            {%- if author.links.linkedin -%}
+            <li class="post-author__link">
+              <a rel="me" target="pix-blog_linkedin" href="https://github.com/{{ author.links.linkedin | escape }}" title="Naviguer vers le profil LinkedIn {{ author.links.linkedin | escape }}">
+                <svg class="icon icon-linkedin"><use xlink:href="{{ '/assets/images/icons.svg#icon-linkedin' | relative_url }}"></use></svg>
+              </a>
+            </li>
             {%- endif -%}
-            {%- if author.twitter -%}
-            <a class="post-author__link" href="https://twitter.com/{{ author.twitter }}">Twitter</a>
+            {%- if author.links.twitter -%}
+            <li class="post-author__link">
+              <a rel="me" target="pix-blog_twitter" href="https://linkedin.com/in/{{ author.links.twitter | escape }}" title="Naviguer vers le profil Twitter {{ author.links.twitter | escape }}">
+                <svg class="icon icon-twitter"><use xlink:href="{{ '/assets/images/icons.svg#icon-twitter' | relative_url }}"></use></svg>
+              </a>
+            </li>
             {%- endif -%}
-            {%- if author.website -%}
-            <a class="post-author__link" href="{{ author.website }}">Website</a>
-            {%- endif -%}
-          </div>
+          </ul>
+          {%- endif -%}
         </div>
       </div>
       {% endfor %}
-    </div>
   </div>
   {%- endif -%}
 

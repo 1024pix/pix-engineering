@@ -1,0 +1,80 @@
+.post {
+  background-color: $white;
+
+  .wrapper {
+    max-width: 680px;
+  }
+
+  &-header {
+    min-height: 320px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  &-title {
+    text-shadow: #333333 1px 1px;
+  }
+
+  &-content {
+    margin-bottom: 0;
+    padding: 32px 0;
+
+    ul, pre, code, p {
+      margin-top: 1.25rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-authors {
+    padding: 32px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  &-author {
+    display: flex;
+    margin-bottom: 32px;
+
+    &__picture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+
+    &__name {
+      margin-bottom: 8px;
+    }
+
+    &__description {
+      margin-bottom: 16px;
+    }
+
+    &__links {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &__link {
+      margin-right: 16px;
+      display: inline-block;
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        fill: grey;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+

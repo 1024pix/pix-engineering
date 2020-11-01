@@ -34,12 +34,12 @@
 }
 .page-headings {
   color: $white;
-  min-height: 200px;
+  min-height: 38vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: $blue-primary;
+  background: $blue-betagouv;
 }
 
 .page-subheading {
@@ -151,76 +151,6 @@
 
 .post-meta {
   color: $white;
-}
-
-/**
- * Posts
- */
-.post {
-  background-color: $white;
-
-  .wrapper {
-    max-width: 680px;
-  }
-}
-
-.post-header {
-  min-height: 320px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
-  color: $white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.post-title {
-  text-shadow: #333333 1px 1px;
-}
-
-.post-content {
-  margin-bottom: 0;
-
-  ul, pre, code, p {
-    margin-top: 1.25rem;
-    margin-bottom: 20px;
-  }
-}
-
-.post-authors {
-
-  > .wrapper {
-    padding: 32px 0;
-    border-top: 1px solid #e8e8e8;
-  }
-}
-
-.post-author {
-  margin-bottom: 32px;
-
-  &__name {
-    margin-bottom: 0;
-  }
-
-  &__description {
-    margin-bottom: 0;
-  }
-
-  &__picture {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    margin-right: 16px;
-  }
-
-  &__link {
-    margin-right: 8px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 
