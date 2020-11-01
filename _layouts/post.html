@@ -40,8 +40,38 @@ layout: default
     </div>
   </div>
 
-  <div class="post-author">
+  {%- if page.authors -%}
+  <div class="post-authors">
+    <div class="wrapper">
+      {% for item in page.authors %}
+      {% assign author = site.data.authors[item] %}
+      <div class="post-author" style="display: flex;">
+        <div>
+          <img class="post-author__picture" src="/assets/images/authors/{{ item }}.png" alt="{{ author.name }}">
+        </div>
+        <div>
+          <h3 class="post-author__name">{{ author.name }}</h3>
+          <p class="post-author__description">{{ author.description }}</p>
+          <div class="post-author__links">
+            {%- if author.linkedin -%}
+            <a class="post-author__link" href="https://linkedin.com/in/{{ author.linkedin }}">LinkedIn</a>
+            {%- endif -%}
+            {%- if author.github -%}
+            <a class="post-author__link" href="https://github.com/{{ author.github }}">GitHub</a>
+            {%- endif -%}
+            {%- if author.twitter -%}
+            <a class="post-author__link" href="https://twitter.com/{{ author.twitter }}">Twitter</a>
+            {%- endif -%}
+            {%- if author.website -%}
+            <a class="post-author__link" href="{{ author.website }}">Website</a>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
+  {%- endif -%}
 
   {%- if site.disqus.shortname -%}
   <div class="wrapper">

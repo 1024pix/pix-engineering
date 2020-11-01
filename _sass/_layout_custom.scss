@@ -188,3 +188,39 @@
   }
 }
 
+.post-authors {
+
+  > .wrapper {
+    padding: 32px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+
+.post-author {
+  margin-bottom: 32px;
+
+  &__name {
+    margin-bottom: 0;
+  }
+
+  &__description {
+    margin-bottom: 0;
+  }
+
+  &__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  &__link {
+    margin-right: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
