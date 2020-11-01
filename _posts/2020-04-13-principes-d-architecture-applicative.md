@@ -5,6 +5,7 @@ date:   2020-04-13 19:32:00 +0200
 categories: architecture
 excerpt: Lignes directrices pour la conception et le développement d'un système d'information pour le très grand public.
 cover_image: "principes-d-architecture-applicative.jpg"
+authors: jeremy_buget
 ---
 
 L'architecture de Pix est construite autour de 3 propriétés applicatives et leurs contraintes respectives : 

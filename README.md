@@ -21,6 +21,48 @@ bundle exec jekyll serve
 
 You can access application at http://localhost:4000
 
+
+## Usage
+
+### Articles
+
+### Authors
+
+#### Adding an author
+
+**1/** Create a new file called `<user_id>.yml` (with `user_id` is the concatenation of `<firstname>_<lastname>`) in folder `/_data/authors`:
+
+```yaml
+# /_data/authors/jeremy_buget.yml
+name: Jérémy Buget
+description: CTO
+links:
+  github: jbuget
+  twitter: jbuget
+  website: https://jbuget.fr
+```
+
+**2/** Add the user's picture in `/assets/images/authors/<user_id>.png`.
+
+> ℹ️ **Picture must be a PNG file.** It should have square dimensions. 
+
+#### Set blog post's author(s)
+
+In the post's front matter, add a property `authors`, that could be a string (`user_id`), an array of strings or nothing:
+
+```
+# No author
+authors:
+
+# Single author
+authors: jeremy_buget
+
+# Multiple authors
+authors:
+  - jeremy_buget
+  - melanie_boudard
+```
+
 ## License
 
 Copyright (c) 2020 GIP PIX.

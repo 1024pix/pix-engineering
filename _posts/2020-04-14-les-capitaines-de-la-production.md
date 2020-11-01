@@ -5,6 +5,7 @@ date:   2020-04-14 15:07:00 +0200
 categories: organisation
 excerpt: Comment nous avons constitué une équipe spéciale de développement dédiée au suivi de production.    
 cover_image: "les-capitaines-de-la-production.jpg"
+authors: jeremy_buget 
 ---
 
 Avec l’évolution du nombre d’utilisateurs / partenaires / clients / collaborateurs / équipes / outils / process / etc. il devient vital pour Pix de consacrer des forces au suivi de production (personnes, ressources matérielles et immatérielles) et de bien les organiser.
