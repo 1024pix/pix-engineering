@@ -43,10 +43,23 @@
   align-items: center;
   justify-content: center;
   background: $blue;
+  padding: 32px $sm-padding-width;
+
+  @media (min-width: 768px) {
+    padding-left: $lg-padding-width;
+    padding-right: $lg-padding-width;
+  }
+}
+
+.page-heading {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 8px;
 }
 
 .page-subheading {
   color: #fefefe;
+  margin-top: 0;
 }
 
 .home {
