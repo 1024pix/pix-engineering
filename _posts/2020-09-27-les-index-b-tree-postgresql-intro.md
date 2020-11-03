@@ -4,7 +4,9 @@ title:  "Série sur l'index B-Tree : introduction"
 date:   2020-09-27 15:30:00 +0200
 categories: architecture
 excerpt: Introduction à une série d'articles portant sur l'_index B-Tree_ en base de données relationnelle PostgreSQL.
-cover_image: "les-index-b-tree-postgresql-intro.jpeg"
+cover:
+  image: "les-index-b-tree-postgresql-intro.jpeg"
+authors: laura_bergoens
 ---
 
 Nous avons choisi d'utiliser le **système de gestion de base de données relationnelle** **_PostgreSQL_**.  
