@@ -4,7 +4,10 @@ title:  "Product Teams"
 date:   2020-04-13 19:34:00 +0200
 categories: organisation product teams
 excerpt: Plutôt que des équipes projet ou technologogiques, nous privilégions des équipes produit agiles centrées sur les utilisateurs et leurs probèmes.
-cover_image: "product-teams.jpg"
+cover:
+  image: "product-teams.jpg"
+  source_title: pxhere.com
+  source_url: https://pxhere.com/en/photo/138718
 authors: jeremy_buget
 ---
 

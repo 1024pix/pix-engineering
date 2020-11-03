@@ -4,7 +4,10 @@ title:  "Les Capitaines de la Production"
 date:   2020-04-14 15:07:00 +0200
 categories: organisation
 excerpt: Comment nous avons constitué une équipe spéciale de développement dédiée au suivi de production.    
-cover_image: "les-capitaines-de-la-production.jpg"
+cover:
+  image: "les-capitaines-de-la-production.jpg"
+  source_title: screenrant.com
+  source_url: https://static1.srcdn.com/wordpress/wp-content/uploads/2019/04/Spock-and-Kirk-FI-1.jpg
 authors: jeremy_buget
 ---
 

@@ -5,8 +5,13 @@ layout: default
 
   <article class="article">
     <header class="article-header">
-      {%- if page.cover_image -%}
-      <div class="article-header__cover" style="background: url('/assets/images/covers/{{ page.cover_image }}') no-repeat center; background-size: cover;">
+      {%- if page.cover.image -%}
+      <div class="article-header__cover" style="background: url('/assets/images/covers/{{ page.cover.image }}') no-repeat center; background-size: cover;">
+        {%- if page.cover.source_title and page.cover.source_url -%}
+        <span class="article-header__cover-credits">
+          Crédits : <a href="{{ page.cover.source_url }}" target="_blank">{{ page.cover.source_title }}</a>
+        </span>
+        {%- endif -%}
       </div>
       {%- endif -%}
       <div class="article-header__meta">

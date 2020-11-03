@@ -29,7 +29,9 @@ layout: default
       <li class="post-card">
         <a class="post-link" href="{{ post.url | relative_url }}">
           <header>
-            <div class="post-cover" style="background-image: url('/assets/images/covers/{{ post.cover_image }}')"></div>
+            {%- if post.cover.image -%}
+            <div class="post-cover" style="background-image: url('/assets/images/covers/{{ post.cover.image }}')"></div>
+            {%- endif -%}
           </header>
           <section>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

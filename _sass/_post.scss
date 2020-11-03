@@ -15,6 +15,21 @@
 
       &__cover {
         min-height: 38vh;
+        position: relative;
+
+        &-credits {
+          padding: 8px;
+          font-size: 12px;
+          line-height: 16px;
+          color: $ultra-light-grey;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          a {
+            color: inherit!important;
+          }
+        }
       }
 
       &__meta {

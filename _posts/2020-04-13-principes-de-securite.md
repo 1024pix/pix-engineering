@@ -4,7 +4,10 @@ title:  "Principes de sécurité"
 date:   2020-04-13 19:33:00 +0200
 categories: architecture securité
 excerpt: Principes de sécurité technique que nous nous appliquons et qui guident nos choix de design applicatif.
-cover_image: "principes-de-securite.jpg"
+cover:
+  image: "principes-de-securite.jpg"
+  source_title: zhuanlan.zhihu.com
+  source_url: https://zhuanlan.zhihu.com/p/140799707
 authors: jeremy_buget
 ---
 
