@@ -32,16 +32,29 @@ layout: default
             <div class="post-cover" style="background-image: url('/assets/images/covers/{{ post.cover_image }}')"></div>
           </header>
           <section>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ post.date | date: date_format }}
+            </time>
+
             <h3 class="post-tiel">{{ post.title | escape }}</h3>
+
             {%- if site.show_excerpts -%}
             <p class="post-excerpt">
               {{ post.excerpt }}
             </p>
             {%- endif -%}
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-              {{ post.date | date: date_format }}
-            </time>
+
+            <div class="post-authors">
+              {% for item in post.authors %}
+              {% assign author = site.data.authors[item] %}
+              <div class="post-authors__author">
+                <img class="post-authors__author-picture" src="/assets/images/authors/{{ item }}.png" alt="{{ author.name }}">
+                <span class="post-authors__author-name">{{ author.name }}</span>
+              </div>
+              {% endfor %}
+            </div>
+
           </section>
         </a>
       </li>

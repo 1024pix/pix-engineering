@@ -10,7 +10,7 @@ html, body {
 body {
   font-family: Marianne, Arial, sans-serif;
   font-size:18px;
-  line-height: 30px;
+  line-height: 28px;
   color: #26353f;
 }
 
@@ -26,12 +26,29 @@ h3 {
   font-weight: 800;
 }
 
+p, ol, ul {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+ol, ul {
+  padding-left: 24px;
+  margin-left: 0;
+}
+
 li {
-  margin-bottom: 0.5rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  > ol,
+  > ul {
+    margin-top: 0;
+  }
 }
 
 a {
-  color: $blue-primary!important;
+  color: $blue!important;
+  text-decoration: underline;
 }
 
 .post-content {

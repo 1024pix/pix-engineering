@@ -1,92 +1,91 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="post wrapper">
 
-  {%- if page.cover_image -%}
-  <header class="post-header" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/covers/{{ page.cover_image }}') no-repeat center; background-size: cover;">
-  {%- else -%}
-  <header class="post-header" style="background: linear-gradient(135deg, rgba(56, 138, 255, 1), rgba(152, 95, 255, 1));">
-  {%- endif -%}
-
-    <div class="wrapper">
-      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-meta">
-        {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {{ page.date | date: date_format }}
-        </time>
-        {%- if page.modified_date -%}
-        ~
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-        {%- endif -%}
-        {%- if page.authors -%}
-        • {% for author in page.authors %}
-        {% assign a = site.data.authors[author] %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">{{ a.name }}</span></span>
-        {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-        {%- endif -%}</p>
-    </div>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
-
-  {%- if page.authors -%}
-  <div class="post-authors wrapper">
-      {% for item in page.authors %}
-      {% assign author = site.data.authors[item] %}
-      <div class="post-author">
-        <div>
-          <img class="post-author__picture" src="/assets/images/authors/{{ item }}.png" alt="{{ author.name }}">
-        </div>
-        <div>
-          <h3 class="post-author__name">{{ author.name }}</h3>
-          <p class="post-author__description">{{ author.description }}</p>
-          {%- if author.links -%}
-          <ul class="post-author__links">
-            {%- if author.links.github -%}
-            <li class="post-author__link">
-              <a rel="me" target="pix-blog_github" href="https://linkedin.com/in/{{ author.links.github | escape }}" title="Naviguer vers le profil GitHub {{ author.links.github | escape }}">
-                <svg class="icon icon-github"><use xlink:href="{{ '/assets/images/icons.svg#icon-github' | relative_url }}"></use></svg>
-              </a>
-            </li>
-            {%- endif -%}
-            {%- if author.links.linkedin -%}
-            <li class="post-author__link">
-              <a rel="me" target="pix-blog_linkedin" href="https://github.com/{{ author.links.linkedin | escape }}" title="Naviguer vers le profil LinkedIn {{ author.links.linkedin | escape }}">
-                <svg class="icon icon-linkedin"><use xlink:href="{{ '/assets/images/icons.svg#icon-linkedin' | relative_url }}"></use></svg>
-              </a>
-            </li>
-            {%- endif -%}
-            {%- if author.links.twitter -%}
-            <li class="post-author__link">
-              <a rel="me" target="pix-blog_twitter" href="https://linkedin.com/in/{{ author.links.twitter | escape }}" title="Naviguer vers le profil Twitter {{ author.links.twitter | escape }}">
-                <svg class="icon icon-twitter"><use xlink:href="{{ '/assets/images/icons.svg#icon-twitter' | relative_url }}"></use></svg>
-              </a>
-            </li>
-            {%- endif -%}
-          </ul>
-          {%- endif -%}
+  <article class="article">
+    <header class="article-header">
+      {%- if page.cover_image -%}
+      <div class="article-header__cover" style="background: url('/assets/images/covers/{{ page.cover_image }}') no-repeat center; background-size: cover;">
+      </div>
+      {%- endif -%}
+      <div class="article-header__meta">
+        <h1 class="article-header__title">{{ page.title | escape }}</h1>
+        <div class="article-header__subheader">
+          <div class="article-header__authors">
+            {% for item in page.authors %}
+            {% assign author = site.data.authors[item] %}
+            <div class="article-header__author">
+              <img class="article-header__author-picture" src="/assets/images/authors/{{ item }}.png"
+                   alt="{{ author.name }}">
+              <span class="article-header__author-name">{{ author.name }}</span>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="article-header__date">
+            {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
+            <time class="article-header__data-time" datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: date_format }}
+            </time>
+          </div>
         </div>
       </div>
-      {% endfor %}
-  </div>
-  {%- endif -%}
+    </header>
 
-  {%- if site.disqus.shortname -%}
-  <div class="wrapper">
-    {%- include disqus_comments.html -%}
-  </div>
-  {%- endif -%}
+    <div class="article-content">
+      {{ content }}
+    </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+
+  <section class="authors">
+    {% for item in page.authors %}
+    {% assign author = site.data.authors[item] %}
+    <div class="author">
+      <div class="author__picture">
+        <img class="author__picture-image" src="/assets/images/authors/{{ item }}.png" alt="{{ author.name }}">
+      </div>
+      <div>
+        <h3 class="author__name">{{ author.name }}</h3>
+        <p class="author__description">{{ author.description }}</p>
+        {%- if author.links -%}
+        <ul class="author__links">
+          {%- if author.links.github -%}
+          <li class="author__link">
+            <a rel="me" target="pix-blog_github" href="https://linkedin.com/in/{{ author.links.github | escape }}"
+               title="Naviguer vers le profil GitHub {{ author.links.github | escape }}">
+              <svg class="icon icon-github">
+                <use xlink:href="{{ '/assets/images/icons.svg#icon-github' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+          {%- endif -%}
+          {%- if author.links.linkedin -%}
+          <li class="author__link">
+            <a rel="me" target="pix-blog_linkedin" href="https://github.com/{{ author.links.linkedin | escape }}"
+               title="Naviguer vers le profil LinkedIn {{ author.links.linkedin | escape }}">
+              <svg class="icon icon-linkedin">
+                <use xlink:href="{{ '/assets/images/icons.svg#icon-linkedin' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+          {%- endif -%}
+          {%- if author.links.twitter -%}
+          <li class="author__link">
+            <a rel="me" target="pix-blog_twitter" href="https://linkedin.com/in/{{ author.links.twitter | escape }}"
+               title="Naviguer vers le profil Twitter {{ author.links.twitter | escape }}">
+              <svg class="icon icon-twitter">
+                <use xlink:href="{{ '/assets/images/icons.svg#icon-twitter' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+          {%- endif -%}
+        </ul>
+        {%- endif -%}
+      </div>
+    </div>
+    {% endfor %}
+
+  </section>
+</div>

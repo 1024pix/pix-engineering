@@ -1,0 +1,124 @@
+.post-list {
+  margin: 40px 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+
+  a {
+    text-decoration: none;
+  }
+
+  > li.post-card {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    margin-bottom: 0;
+    color: #26353f;
+
+    a.post-link {
+      font-size: 1rem;
+      color: inherit !important;
+      height: 100%;
+      border-radius: 5px;
+      border: 1px solid #eeeeee;
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 2px 4px;
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+      overflow: hidden;
+      background: #fff;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:visited {
+        text-decoration: none;
+      }
+
+      header {
+        overflow: hidden;
+      }
+
+      section {
+        padding: 16px 24px;
+      }
+
+      &:active,
+      &:hover,
+      &:focus {
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.07) 1px 7px 15px;
+
+        .post-cover {
+          transform: scale(1.1);
+        }
+
+        .post-cover::after {
+          opacity: 0;
+        }
+      }
+
+    }
+
+    .post-cover {
+      height: 160px;
+      width: 100%;
+      background-size: cover;
+      transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(5, 5, 6, 0.3);
+        content: " ";
+        transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+      }
+    }
+
+    .post-type {
+      font-weight: bold;
+    }
+
+    .post-authors {
+
+      &__author {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 16px;
+        margin-bottom: 8px;
+
+        &-picture {
+          border-radius: 50%;
+          width: 32px;
+          height: 32px;
+          margin-right: 8px;
+        }
+
+        &-name {
+        }
+      }
+    }
+
+    .post-excerpt {
+      color: $dark-grey;
+      font-size: 16px;
+    }
+
+    .post-date {
+      color: $light-grey;
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: block;
+    }
+  }
+}
