@@ -5,6 +5,9 @@ date:   2020-09-28 09:30:00 +0200
 categories: architecture
 excerpt: Comment est structuré un _index B-Tree_ et quelques exemples concrets d'utilisation.
 cover_image: "les-index-b-tree-postgresql-partie-1.jpeg"
+cover:
+  image: "les-index-b-tree-postgresql-partie-1.jpeg"
+authors: laura_bergoens
 ---
 
 Comprendre la structure d'un _index B-Tree_ permet de mieux comprendre ses avantages et ses inconvénients, et ainsi de l'utiliser à bon escient.
