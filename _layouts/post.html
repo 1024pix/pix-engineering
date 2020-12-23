@@ -56,9 +56,19 @@ layout: default
         <p class="author__description">{{ author.description }}</p>
         {%- if author.links -%}
         <ul class="author__links">
+          {%- if author.links.linkedin -%}
+          <li class="author__link">
+            <a rel="me" target="pix-blog_linkedin" href="https://linkedin.com/in/{{ author.links.linkedin | escape }}"
+               title="Naviguer vers le profil LinkedIn {{ author.links.linkedin | escape }}">
+              <svg class="icon icon-github">
+                <use xlink:href="{{ '/assets/images/icons.svg#icon-linkedin' | relative_url }}"></use>
+              </svg>
+            </a>
+          </li>
+          {%- endif -%}
           {%- if author.links.github -%}
           <li class="author__link">
-            <a rel="me" target="pix-blog_github" href="https://linkedin.com/in/{{ author.links.github | escape }}"
+            <a rel="me" target="pix-blog_github" href="https://github.com/{{ author.links.github | escape }}"
                title="Naviguer vers le profil GitHub {{ author.links.github | escape }}">
               <svg class="icon icon-github">
                 <use xlink:href="{{ '/assets/images/icons.svg#icon-github' | relative_url }}"></use>
@@ -66,19 +76,9 @@ layout: default
             </a>
           </li>
           {%- endif -%}
-          {%- if author.links.linkedin -%}
-          <li class="author__link">
-            <a rel="me" target="pix-blog_linkedin" href="https://github.com/{{ author.links.linkedin | escape }}"
-               title="Naviguer vers le profil LinkedIn {{ author.links.linkedin | escape }}">
-              <svg class="icon icon-linkedin">
-                <use xlink:href="{{ '/assets/images/icons.svg#icon-linkedin' | relative_url }}"></use>
-              </svg>
-            </a>
-          </li>
-          {%- endif -%}
           {%- if author.links.twitter -%}
           <li class="author__link">
-            <a rel="me" target="pix-blog_twitter" href="https://linkedin.com/in/{{ author.links.twitter | escape }}"
+            <a rel="me" target="pix-blog_twitter" href="https://twitter.com/{{ author.links.twitter | escape }}"
                title="Naviguer vers le profil Twitter {{ author.links.twitter | escape }}">
               <svg class="icon icon-twitter">
                 <use xlink:href="{{ '/assets/images/icons.svg#icon-twitter' | relative_url }}"></use>
