@@ -19,7 +19,7 @@ D'un point de vue technique et applicatif, Pix repose sur les 3 principes direct
 
 ## 1. Humility Driven Policy
 
-En matière de protection d'un SI, l'humilité est la première des sécurités. 
+En matière de protection d'un SI, l'humilité est la première des sécurités.
 
 Se dire qu'on maîtrise et se reposer sur son talent, aussi grand soit-il, c'est prendre le risque de tomber sur quelqu'un (personne ou organisation concurrentes) malintentionné disposant de plus de compétences, temps, ressources, volonté que nous.
 
@@ -48,7 +48,7 @@ Ex : la brique applicative permettant la connexion côté frontaux est exclusive
 
 ### 1.2 - Les experts habitués plutôt que les talents curieux
 
-Il y a des domaines où la curiosité, la créativité et l'esprit d'initiative sont les principales qualités requises pour réussir (monter une startup basée sur la blockchain ou la VR/AR). La sécurité n'en fait pas partie. 
+Il y a des domaines où la curiosité, la créativité et l'esprit d'initiative sont les principales qualités requises pour réussir (monter une startup basée sur la blockchain ou la VR/AR). La sécurité n'en fait pas partie.
 
 Dans le premier cas, l'enjeu est "d'imaginer les possibles". Dans le second, c'est de "prévenir les risques". Sans vision, on ne va nulle part ; mais sans sécurité, on ne va pas loin.
 
@@ -72,7 +72,7 @@ Ex : Pix est accompagné par le Ministère de l'Education nationale dans le chan
 
 La protection des données à caractère personnel est un sujet hautement complexe et critique à adresser. En particulier depuis l'entrée en application de la loi relative au RGPD.
 
-Depuis le premier jour, le parti pris par Pix est de demander et de conserver le minimum de données personnelles pertinentes possibles. 
+Depuis le premier jour, le parti pris par Pix est de demander et de conserver le minimum de données personnelles pertinentes possibles.
 
 Conserver un minimum de données personnelles rassure :
 

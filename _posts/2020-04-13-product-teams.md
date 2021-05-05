@@ -19,22 +19,22 @@ Une product team est un groupe d’individus disposant des moyens et des compét
 
 ## Répartition
 
-Actuellement, les équipes sont au nombre de 4 : 
+Actuellement, les équipes sont au nombre de 4 :
 
 - **Team Accès** : Permettre aux utilisateurs d’accéder aux applis Pix, via authentification interne ou externe, en conservant son compte tout au long de sa vie, en conformité avec la réglementation (CGUs, données perso…)
-- **Team Certification** : Permettre à toute personne souhaitant valoriser ses compétences numériques d’apporter une preuve fiable de son niveau sur ces compétences grâce à l’obtention d’un certificat. 
+- **Team Certification** : Permettre à toute personne souhaitant valoriser ses compétences numériques d’apporter une preuve fiable de son niveau sur ces compétences grâce à l’obtention d’un certificat.
 - **Team Expérience d'évaluation** : Permettre de passer un bon moment, d'identifier ce qu'on sait et ce qu'on ne sait pas et d'avoir envie d'apprendre et s'en sentir capable.
 - **Team Prescription** : Permettre aux prescripteurs de donner des formations adaptées aux besoins des prescrits de son organisation, de mesurer l'efficacité des formations (avant/après), et d'identifier/valoriser les compétences des prescrits.
 
 ## Caractéristiques
 
-Une équipe rassemble les caractéristiques suivantes : 
+Une équipe rassemble les caractéristiques suivantes :
 
 - stratégique : couvre un secteur d’activité en réponse à un problème spécifique intéressant pour Pix
-- petite : max 10 personnes, 
-- pragmatique : proche du terrain, de ses utilisateurs et de ses enjeux, 
-- utile : possède une finalité véritable pour une tranche ou l’ensemble de nos utilisateurs 
-- autonome : dispose de TOUS les moyens nécessaires pour accomplir ses objectifs, 
+- petite : max 10 personnes,
+- pragmatique : proche du terrain, de ses utilisateurs et de ses enjeux,
+- utile : possède une finalité véritable pour une tranche ou l’ensemble de nos utilisateurs
+- autonome : dispose de TOUS les moyens nécessaires pour accomplir ses objectifs,
 - mixte : mélange des personnes de tout horizon / histoire / personnalité / etc. #diversité
 - pluridisciplinaire : mélange des compétences de tout genre : devs, non-dev, front, back, ops, UX, UI, etc.
 - experte : sur les points nécessaires
@@ -45,13 +45,13 @@ Une équipe rassemble les caractéristiques suivantes :
 
 ## Composition
 
-A minima, une équipe est composée de : 
+A minima, une équipe est composée de :
 
 - 1 Product Owner
 - 1 Lead Developer
 - au moins 3 développeurs·euses (max = 8)
 - 0 ou plusieurs autres personnes avec des compétences et expertises utiles, de façon temporaire ou permanente
- 
+
 ### Product Owner (PO)
 
 Le PO a pour responsabilité de :
