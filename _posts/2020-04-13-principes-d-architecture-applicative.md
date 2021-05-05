@@ -9,11 +9,11 @@ cover:
 authors: jeremy_buget
 ---
 
-L'architecture de Pix est construite autour de 3 propriétés applicatives et leurs contraintes respectives : 
+L'architecture de Pix est construite autour de 3 propriétés applicatives et leurs contraintes respectives :
 
-- User centric architecture, 
-- Platform oriented architecture
-- API-based architecture
+- User centric architecture,
+- Platform oriented architecture,
+- API-based architecture.
 
 ## 1. User Centric Architecture
 
@@ -75,7 +75,7 @@ L'ensemble des applications de la plateforme doit être disponible à tout momen
 
 De même que chaque application mobile qui se développe tend à devenir une messagerie sociale, tout système d'information qui se développe tend à devenir une plateforme numérique.
 
-Pix a été pensé depuis le premier jour comme un "SI plateforme". 
+Pix a été pensé depuis le premier jour comme un "SI plateforme".
 
 Le but d'une plateforme est de permettre à ses utilisateurs d'accomplir un maximum d'actions au sein d'un unique écosystème, avec un minimum de changement de contexte ou d'interactions extérieures, pour un domaine donné – lequel tend à s'étendre et se diversifier avec le temps et le succès.
 
@@ -105,11 +105,11 @@ Ex : découper les usages en plusieurs applications, qui peuvent être développ
 
 Ex : s'appuyer sur des logiciels / cadriciels / outils Open Source et/ou maîtrisés par le plus grand nombre.
 
-Ex : coller au plus près des concepts, procédures et protocoles standards. 
+Ex : coller au plus près des concepts, procédures et protocoles standards.
 
 Ex : favoriser l'ingénierie logicielle de qualité (tests, automatisation, outils d'exploitation, industrialisation, rationalisation des ressources, etc.).
 
-Remarque : dans cette optique, il n'est pas exclu un jour de passer à une architecture applicative orientée micro-services, voire serverless type AWS Lambda
+Remarque : dans cette optique, il n'est pas exclu un jour de passer à une architecture applicative orientée micro-services, voire serverless type AWS Lambda.
 
 ### Interopérabilité
 
@@ -126,10 +126,10 @@ Ex : fournir une API sécurisée opérationnelle et pertinente (échanges extern
 
 ## 3. Restful API-based Architecture
 
-On considère 4 types de données : 
+On considère 4 types de données :
 
 - les données à caractère juridique ou d'archivage (logs, fichiers à valeur de preuve, scans, etc.)
-- les données référentielles, de type contenu pédagogique 
+- les données référentielles, de type contenu pédagogique
 - les données générées par les utilisateurs, leurs interactions et leurs usages (comptes, évaluations, réponses, snapshots, organisation, campagnes, etc.)
 - les données éditoriales ou marketing
 
