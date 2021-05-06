@@ -38,7 +38,7 @@ layout: default
     </header>
 
     <div class="article-content">
-      {{ content }}
+      {% include anchor_headings.html html=content anchorBody="#" %}
     </div>
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
