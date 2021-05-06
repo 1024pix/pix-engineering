@@ -1,0 +1,10 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": ".*\/assets\/images\/posts\/.*"
+    },
+    {
+      "pattern": "https://zhuanlan.zhihu.com/p/140799707"
+    }
+  ]
+}

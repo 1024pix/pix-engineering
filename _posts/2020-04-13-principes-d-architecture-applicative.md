@@ -18,7 +18,7 @@ L'architecture de Pix est construite autour de 3 propriétés applicatives et le
 ## 1. User Centric Architecture
 
 D'un point de vue architecture Pix a été conçu comme une galaxie avec des planètes, une par usage / typologie d'utilisateurs :
-
+<!-- markdown-link-check-disable -->
 - [Pix.fr](https://pix.fr) pour les utilisateurs invités (i.e. non connectés) ou en quête d'information institutionnelle
 - [Pix App](https://app.pix.fr) pour les utilisateurs connectés qui souhaitent se positionner au sein du référentiel de compétences numériques et se faire certifier
 - [Pix Orga](https://orga.pix.fr) pour les organisations (établissements scolaires ou supérieurs, entreprises, administrations, associations, etc.) qui déploient, coordonnent et/ou prescrivent Pix auprès de populations d'utilisateurs accompagnées (écoliers, étudiants, salariés, etc.)
@@ -26,6 +26,7 @@ D'un point de vue architecture Pix a été conçu comme une galaxie avec des pla
 - [Pix Admin](https://admin.pix.fr) pour les administrateurs de la plateforme : développeurs, jurés, exploitants, etc.
 - [Pix Editor](https://editor.pix.fr) pour les producteurs / réplicateurs de contenu pédagogique (domaines, compétences, épreuves, acquis, tutoriels) qui souhaitent enrichir le référentiel Pix
 - etc.
+<!-- markdown-link-check-enable -->
 
 Le choix d'une plateforme Web (VS. client lourd "à l'ancienne" VS. RDA VS. mobile / native / hybride) a été fait afin de toucher un public le plus large.
 
