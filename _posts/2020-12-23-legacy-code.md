@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Legacy code"
-date: 2020-12-23 15:53:00 +0200
+date: 2021-05-07 09:00:00 +0200
 categories: architecture
 excerpt: Comment changer incrémentalement le design ?
 cover:
@@ -129,7 +129,7 @@ La modification effective fait [64 lignes](https://github.com/1024pix/pix-db-rep
 Le comportement principal de l'application est constitué d'effets de bord en base de données. Nous avons utilisé le framework de
 test habituel (mocha/chai). Plutôt que de reprendre la couche d'accès habituelle aux données de pix
 ([knex](https://github.com/knex/knex) + [node_postgres](https://github.com/brianc/node-postgres)),
-nous sommes passés par le client natif `psql`. Celui-ci est appelé par NodeJS via la librairie [execa]<https://github.com/sindresorhus/exec>).
+nous sommes passés par le client natif `psql`. Celui-ci est appelé par NodeJS via la librairie [execa](https://github.com/sindresorhus/execa).
 
 La [PR](https://github.com/1024pix/pix-db-replication/pull/28/files) obtenue fait 300 lignes.
 

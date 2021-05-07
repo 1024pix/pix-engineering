@@ -1,4 +1,4 @@
-name: Ruby
+name: test
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+
+  lint-markdown:
 
     runs-on: ubuntu-latest
 
@@ -21,3 +22,12 @@ jobs:
         run: bundle install
       - name: Run tests (lint markdown)
         run: bundle exec mdl _posts
+
+  lint-markdown-link:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          folder-path: '_posts'

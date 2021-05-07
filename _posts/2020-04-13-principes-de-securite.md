@@ -40,7 +40,7 @@ Plutôt que de réinventer la roue avec l'illusion d'avoir la nouvelle idée ou 
 
 Ex : les services de l'API implémentent le [protocole AAA](https://fr.wikipedia.org/wiki/Protocole_AAA) : Authentification, Autorisation, Traçabilité.
 
-Ex : l'authentification au sein de la plateforme se base sur le [protocole OAuth 2](https://oauth.net/2/), cf. [RFC 6749](https://tools.ietf.org/html/rfc6749), [RFC 6750](https://tools.ietf.org/html/rfc6750) et [RFC 6819](http://rfc6819/).
+Ex : l'authentification au sein de la plateforme se base sur le [protocole OAuth 2](https://oauth.net/2/), cf. [RFC 6749](https://tools.ietf.org/html/rfc6749), [RFC 6750](https://tools.ietf.org/html/rfc6750) et [RFC 6819](https://tools.ietf.org/html/rfc6819).
 
 Ex : la procédure de gestion et les informations de “session pour un utilisateur connecté" se basent sur le principe et la [technologie JWT](https://fr.wikipedia.org/wiki/JSON_Web_Token), standard actuel pour une exploitation Web sans état (stateless).
 
