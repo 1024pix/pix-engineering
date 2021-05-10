@@ -9,7 +9,7 @@ cover:
 authors: francois_de_metz
 ---
 
-Par ce que nous aimons rire, pour le 1er avril, nous avons décidé de faire une blague à nos utilisateurs. J'aimerais vous raconter comment cette blague est née, codée et déployée, car à l'échelle de Pix, une blague doit être réalisée sérieusement.
+Parce que nous aimons rire, pour le 1er avril, nous avons décidé de faire une blague à nos utilisateurs. J'aimerais vous raconter comment cette blague est née, codée et déployée, car à l'échelle de Pix, une blague doit être réalisée sérieusement.
 
 Tout a été imaginé et implémenté en une après-midi du 31 mars 2021, lors d'un "Tech Time". Le "Tech Time" c'est une après-midi toutes les 2 semaines dans laquelle l'équipe de développement se retrouve pour travailler sur des sujets hors roadmap, et pas forcément en rapport avec Pix.
 
@@ -24,7 +24,7 @@ Voilà à quoi ressemble le compteur à la base :
 
 Nous implémentons rapidement la première itération en décrémentant le compteur avec comme valeur minimale -999. Tout se passe en TDD et en mob, par plage de 15 minutes. Tests unitaires, tests d'intégrations tout y passe.
 
-Nous nous rendons compte rapidement qu'il va falloir gérer le cycle de vie de la blague. Il va falloir l'activer le 1er avril mais surtout l'arrêter dans la nuit. Pas question de déployer une version spécifiquement pour cela. Nous utilisons alors un mécanisme présent dans l'API de bascule de fonctionnalités (feature toggle) pour pouvoir le faire à chaud.
+Nous nous rendons compte que nous devons gérer le cycle de vie de la blague. Il va falloir l'activer le 1er avril mais surtout l'arrêter dans la nuit. Pas question de déployer une version spécifiquement pour cela. Nous utilisons alors un mécanisme présent dans l'API de bascule de fonctionnalités (feature toggle) pour pouvoir le faire à chaud.
 
 Les comportements sont testés, l'API est modifiée et nous faisons [la pull request sur le dépôt](https://github.com/1024pix/pix/pull/2794).
 
@@ -52,7 +52,7 @@ Pour ne pas perturber les sessions de certifications du matin, il est décider d
 
 #### Conclusion
 
-Nous remercions tout d'abord le support qui a géré les retours d'utilisateurs, certains amusé, d'autres moins.
+Nous remercions tout d'abord le support qui a géré les retours d'utilisateurs, certains amusés, d'autres moins.
 
 **Qu'avons-nous appris ?**
 
@@ -60,4 +60,4 @@ Si la fonctionnalité a été rapidement codée, la plus grosse partie du boulot
 
 Imaginer, coder, tester et déployer une fonctionnalité non prévue en ~24h, c'est possible, et c'est bien sympa.
 
-Si tu aime le service public, coder et surtout t'amuser, [nous recrutons](https://www.welcometothejungle.com/fr/companies/pix).
+Si tu aimes le service public, coder et surtout t'amuser, [nous recrutons](https://www.welcometothejungle.com/fr/companies/pix).
