@@ -34,7 +34,7 @@ A 17h, c'est l'heure du spectacle. Nous montrons le résultat à l'équipe. Le v
 
 <video src="/assets/images/posts/poisson-avril/spectacle.mp4" controls></video>
 
-Hilarant n'est ce pas ?
+Hilarant n'est-ce pas ?
 
 #### La communication interne
 
