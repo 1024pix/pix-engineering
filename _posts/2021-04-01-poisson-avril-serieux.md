@@ -18,6 +18,7 @@ Tout a été imaginé et implémenté en une après-midi du 31 mars 2021, lors d
 Nous nous retrouvons vers 14h30 pour discuter de quoi faire. Rapidement, nous envisageons de faire quelque chose avec le compteur de Pix, élément central de l'interface. Décision est prise de le faire inexorablement baisser.
 
 Voilà à quoi ressemble le compteur à la base :
+
 ![Le compteur de Pix](/assets/images/posts/poisson-avril/compteur-pix.png)
 
 #### Implémentation
