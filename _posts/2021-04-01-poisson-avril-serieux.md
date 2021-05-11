@@ -11,18 +11,18 @@ authors: francois_de_metz
 
 Parce que nous aimons rire, pour le 1er avril, nous avons décidé de faire une blague à nos utilisateurs. J'aimerais vous raconter comment cette blague est née, codée et déployée, car à l'échelle de Pix, une blague doit être réalisée sérieusement.
 
-Tout a été imaginé et implémenté en une après-midi du 31 mars 2021, lors d'un "Tech Time". Le "Tech Time" c'est une après-midi toutes les 2 semaines dans laquelle l'équipe de développement se retrouve pour travailler sur des sujets hors roadmap, et pas forcément en rapport avec Pix.
+Tout a été imaginé et implémenté en une après-midi du 31 mars 2021, lors d'un "Tech Time". Le "Tech Time" c'est une après-midi toutes les 2 semaines dans laquelle l'équipe de développement se retrouve pour travailler sur des sujets non fonctionnels, et pas forcément en rapport avec Pix.
 
 #### Prise de décision
 
-Nous nous retrouvons vers 14h30 pour discuter de quoi faire. Rapidement, nous envisageons de faire quelque chose avec le compteur de Pix, élément central de l'interface. Décision est prise de le faire baisser d'une manière inexorable.
+Nous nous retrouvons vers 14h30 pour discuter de quoi faire. Rapidement, nous envisageons de faire quelque chose avec le compteur de Pix, élément central de l'interface. Décision est prise de le faire inexorablement baisser.
 
 Voilà à quoi ressemble le compteur à la base :
 ![Le compteur de Pix](/assets/images/posts/poisson-avril/compteur-pix.png)
 
 #### Implémentation
 
-Nous implémentons rapidement la première itération en décrémentant le compteur avec comme valeur minimale -999. Tout se passe en TDD et en mob, par plage de 15 minutes. Tests unitaires, tests d'intégrations tout y passe.
+Nous implémentons rapidement la première itération en décrémentant le compteur avec comme valeur minimale -999. Tout se passe en TDD et en mob programming, par plage de 15 minutes. Tests unitaires, tests d'intégration tout y passe.
 
 Nous nous rendons compte que nous devons gérer le cycle de vie de la blague. Il va falloir l'activer le 1er avril mais surtout l'arrêter dans la nuit. Pas question de déployer une version spécifiquement pour cela. Nous utilisons alors un mécanisme présent dans l'API de bascule de fonctionnalités (feature toggle) pour pouvoir le faire à chaud.
 
@@ -38,9 +38,9 @@ Hilarant n'est-ce pas ?
 
 #### La communication interne
 
-Vers 18h, il est temps d'informer le reste de Pix de cette "fonctionnalité" : Comment elle fonctionne, est-ce que nous pouvons la déployer et l'activer ?
+Vers 18h, il est temps d'informer le reste de Pix de cette "fonctionnalité", et surtout de valider que nous pouvons la déployer et l'activer.
 
-Pour ne pas perturber les sessions de certifications du matin, il est décider d'activer le poisson que le 1er Avril à 16h30.
+Pour ne pas perturber les sessions de certifications du matin, il est décider de n'activer le poisson que le 1er Avril à 16h30.
 
 #### Le déroulé
 
