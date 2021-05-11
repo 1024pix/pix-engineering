@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Poisson d'avril !"
-date:   2021-05-10 10:42:42 +0200
+date:   2021-05-11 10:10:42 +0200
 categories: architecture
 excerpt: La vie et la mort d'une blague pour le 1er Avril.
 cover:
