@@ -21,6 +21,12 @@ bundle exec jekyll serve
 
 You can access application at http://localhost:4000
 
+#### Via Docker
+
+```
+docker compose up -d
+```
+
 
 ## Usage
 
