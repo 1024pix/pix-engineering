@@ -1,16 +1,18 @@
 # Pix Engineering
 
-[Blog site](https://engineering.pix.fr) of the IT teams of Pix.
+Pix IT team's [blog](https://engineering.pix.fr) 
 
-## Installation
+## Setup
 
-### Requirements
+### Local
+
+#### Requirements
 
 - Git 2.25.0
 - Ruby 2.7.1
 - Bundler 2.1.4
 
-### Instructions
+#### Instructions
 
 ```
 git clone git@github.com:1024pix/pix-engineering.git
@@ -19,10 +21,21 @@ bundle install
 bundle exec jekyll serve
 ```
 
-You can access application at http://localhost:4000
+### Local with Docker
 
+#### Requirements
+- Docker
+- Docker-compose > 3
+
+#### Instructions
+```
+git clone git@github.com:1024pix/pix-engineering.git
+cd pix-engineering
+docker compose up --detach
+```
 
 ## Usage
+You can access application at http://localhost:4000
 
 ### Articles
 
