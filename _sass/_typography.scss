@@ -9,9 +9,11 @@ html, body {
 
 body {
   font-family: Marianne, Arial, sans-serif;
-  font-size:18px;
-  line-height: 28px;
+  font-size:17px;
+  line-height: 22px;
   color: #26353f;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -37,12 +39,15 @@ ol, ul {
 }
 
 li {
-  margin-top: 8px;
-  margin-bottom: 8px;
+
+  &::marker {
+    color: $blue-light;
+  }
 
   > ol,
   > ul {
     margin-top: 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -54,11 +59,25 @@ a {
 .post-content {
 
   h2 {
-    margin-top: 60px;
+    margin-top: 3.75rem;
   }
 
   h3 {
-    margin-top: 40px;
+    margin-top: 2rem;
+  }
+}
+
+blockquote {
+  border-color: $blue-light;
+  color: #6a737d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $ultra-light-grey;
+  font-style: normal;
+  line-height: 1.5rem;
+
+  > p {
+    margin-top: 0;
   }
 }
 
