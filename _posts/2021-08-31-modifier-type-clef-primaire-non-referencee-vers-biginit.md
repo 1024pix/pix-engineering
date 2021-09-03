@@ -151,7 +151,7 @@ DROP FUNCTION "copy_int_id_to_bigint_id";
 ALTER SEQUENCE "knowledge-elements_id_seq" OWNED BY "knowledge-elements"."bigintId";
 ALTER SEQUENCE "knowledge-elements_id_seq" AS BIGINT;
 ALTER TABLE "knowledge-elements" ALTER COLUMN "bigintId" SET DEFAULT nextval('"knowledge-elements_id_seq"');
-ALTER TABLE "knowledge-elements" ALTER COLUMN "id" DROP DEFAULT';
+ALTER TABLE "knowledge-elements" ALTER COLUMN "id" DROP DEFAULT;
 ALTER TABLE "knowledge-elements" DROP CONSTRAINT "knowledge-elements_pkey";
 ALTER TABLE "knowledge-elements" ALTER COLUMN "id" DROP NOT NULL;
 ALTER TABLE "knowledge-elements" ADD CONSTRAINT "knowledge-elements_pkey" PRIMARY KEY USING INDEX "knowledge-elements_bigintId_index";
