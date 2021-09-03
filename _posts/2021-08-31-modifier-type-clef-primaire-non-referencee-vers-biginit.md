@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Passer une PK de INT en BIGINT en zéro downtime"
-date:   2021-08-30 10:10:42 +0200
+date:   2021-09-03 10:10:42 +0200
 categories: bdd
 excerpt: "Sur une table volumineuse en PostgreSQL"
 cover:
