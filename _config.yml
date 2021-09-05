@@ -26,13 +26,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engineering.pix.fr" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: pix_engineering
-github_username:  1024pix
+github_username: 1024pix
 #paginate: 9
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-analytics
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,3 +56,8 @@ plugins:
 #   - vendor/ruby/
 
 show_excerpts: true
+
+jekyll_analytics:
+  Matomo: # Add, if you want to track with Matomo (former Piwik Analytics)
+    url: analytics.pix.fr # Required - url to Matomo installation without trailing /
+    siteId: "8"
