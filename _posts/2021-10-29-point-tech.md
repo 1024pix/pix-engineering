@@ -21,7 +21,7 @@ Au même titre que le Daily Meeting ou que la Démonstration de fin de Sprint, l
 
 Il est aussi l’un de ceux ayant le moins évolué au cours du temps, malgré les nombreux mouvements opérés (arrivées et départs de personnes, création, split ou réorganisation des équipes).
 
-Concrètement, il s’agit d’une après-midi entière, inter-équipe, qui se tient toutes les deux semaines, le mercredi après-midi, en alternance avec la démonstration, au cours de laquelle les développeuses et développeurs qui le souhaitent, peuvent travailler librement sur un ou plusieurs sujets de leur choix (technique, fonctionnel, organisationnel, documentaire, etc.), seul ou en groupe, en vue d’améliorer le quotidien de l’équipe Engineering, en termes de plateforme, de code, d’outils et process, de standards ou d’interactions (mécaniques ou humaines).
+Concrètement, il s’agit d’une après-midi entière, inter-équipe, qui se tient toutes les deux semaines, le mercredi après-midi, en alternance avec la démonstration du sprint, au cours de laquelle les développeuses et développeurs qui le souhaitent, peuvent travailler librement sur un ou plusieurs sujets de leur choix (technique, fonctionnel, organisationnel, documentaire, etc.), seul ou en groupe, en vue d’améliorer le quotidien de l’équipe Engineering, en termes de plateforme, de code, d’outils et process, de standards ou d’interactions (mécaniques ou humaines).
 
 L'événement est non-obligatoire. Dans les faits, on constate une participation active régulière de l’ensemble des personnes et des équipes, ce qui contribue à la qualité, la richesse et le plaisir du moment.
 
@@ -49,10 +49,10 @@ D’autres sujets peuvent tout aussi bien être abandonnés ou délaissés quelq
 Le point tech a lieu un mercredi après-midi sur deux, de 13h45 jusqu’à 17h45 environ.
 
 - **[13h45]** : Un rappel automatique annonce le début du point tech. Les participants sont invités à rejoindre la visioconférence et le tableau interactif virtuel.
-- **[13h45-14h00]** : Chacun indique sous forme de post-it virtuel le sujet sur lequel il compte se mettre ou rejoindre
+- **[13h45-14h00]** : Chacun indique sous forme de post-it virtuel le sujet sur lequel il compte travailler
 - **[14h00-14h15]** : Chaque post-it est évoqué, de préférence par son auteur, pour expliquer ce qu’il recouvre
 - **[14h15]** : Top départ ! Les personnes ou groupes se lancent sur leurs chantiers respectifs
-- **[14h15-17h00]** : Les chantiers avancent. Personne n’est bloqué sur un sujet ou une équipe. Ceux qui le souhaitent peuvent changer de groupe ou de chantier à tout moment.
+- **[14h15-17h00]** : Les chantiers avancent. Personne n’est bloqué sur un sujet ou une équipe. Ceux qui le souhaitent peuvent changer de groupe ou de chantier à tout moment (lois des 2 pieds, issue du [forum ouvert](https://fr.wikipedia.org/wiki/M%C3%A9thodologie_Forum_Ouvert).
 - **[16h45]** : Un rappel automatique prévient tout le monde de se préparer pour la restitution.
 - **[17h00-17h45]** : C’est l’heure du “Spectacle” ! Un·e animateur·rice invite à tour de rôle les groupes à restituer le fruit de leurs efforts. C’est le moment où l’on découvre et partage un maximum de choses, des apprentissages, des décisions, etc. La réunion est ouverte à tous, et des gens n’ayant pas participé à l’après-midi peuvent assister au résultat en tant que spectateur. Il faut compter entre 2 et 5 minutes par sujet (7mn max) afin que tout le monde puisse passer correctement. Au pire, les personnes et leurs sujets sont identifiés. Les discussions pourront se poursuivre plus tard avec ceux qui le souhaitent.
 - **[17h45]** : Fin du point tech. L’occasion de s’intéresser, poursuivre ou creuser des sujets autour d’une bonne bière ou d’une bonne bolée de cidre (ou tout autre liquide de bon goût).
@@ -99,14 +99,14 @@ Au vu des très nombreuses réussites évoquées ci-dessus, la pratique organisa
 
 Mais au-delà de l’aspect opérationnel, le point tech permet de brasser régulièrement les équipes et de permettre à des personnes qui ne se côtoient pas si souvent de rencontrer et travailler avec de nouvelles personnes. Sans aller jusqu’à parler de team building, c’est un bon moyen pour tisser des liens et faire en sorte que chacun se comprenne bien et interagisse de la meilleure façon avec l’autre, qui sera peut-être son futur partenaire d’équipe. Connaître l’autre, c’est aussi se rendre compte qu’il s’intéresse ou maîtrise une compétence qui peut nous intéresser nous-mêmes ou être utile un jour. Enfin, c’est une façon de partager des points de vue ou de découvrir de nouvelles façons de faire.
 
-Le point tech est aussi l’occasion pour les développeurs de se former ou d’approfondir leurs connaissances / compétences, qu’ils soient internes ou prestataires. Réaliser des productions de qualité nécessite d’avoir des bases solides quant à ses outils ou son domaine d’activité. Et pour cela, il faut pratiquer et répéter régulièrement son artisanat.
+Le point tech est aussi l’occasion pour les développeurs et les développeuses, internes ou prestataires, de se former et d’approfondir leurs connaissances / compétences. Réaliser des productions de qualité nécessite d’avoir des bases solides quant à ses outils ou son domaine d’activité. Et pour cela, il faut pratiquer et répéter régulièrement son artisanat.
 
-Il arrive parfois que certaines équipes connaissent des moments de tensions critiques ou à fort enjeu. Les points tech sont l’occasion pour celles ou ceux qui en ont besoin de sortir la tête du guidon, souffler, ou trouver de l’aide.
+Il arrive parfois que certaines équipes connaissent des moments de tensions critiques ou à fort enjeu. Les points tech sont l’occasion pour celles et ceux qui en ont besoin de sortir la tête du guidon, souffler, ou trouver de l’aide.
 
-Pour finir, c’est une pratique qui permet de conserver une dynamique positive au sein de l’équipe Engineering, avec des personnes motivées, intéressées, impliquées, curieuses, ouvertes, épanouies.
+Pour finir, c’est une pratique qui permet de conserver une dynamique positive au sein de l’équipe Engineering, avec des personnes motivées, intéressées, impliquées, curieuses, ouvertes et épanouies.
 
 ## Conclusion
 
-Le point tech n’est qu’une pratique organisationnelle parmi d’autres. Pour Pix, c’est un événement qui rythme le calendrier et les itérations des équipes techniques de façon très positive, depuis longtemps. Il a fallu l’adapter à mesurer que le service évoluait, mais aujourd’hui encore, c’est un rituel inter-équipes commun qui porte ses fruits, aussi bien sur le plan individuel que collectif.
+Le point tech est une pratique organisationnelle parmi d’autres. Pour Pix, c’est un événement qui rythme le calendrier et les itérations des équipes techniques de façon très positive, depuis longtemps. Il a fallu l’adapter à mesurer que le service évoluait, mais aujourd’hui encore, c’est un rituel inter-équipes commun qui porte ses fruits, aussi bien sur le plan individuel que collectif.
 
 Si vous avez des questions, [contactez-nous](https://github.com/1024pix/pix-engineering/issues) pour que nous puissions améliorer cet article !
