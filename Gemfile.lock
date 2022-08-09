@@ -293,7 +293,7 @@ DEPENDENCIES
   github-pages
   jekyll-analytics
   jekyll-feed (~> 0.12)
-  mdl (= 0.11.0)
+  jemoji
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data

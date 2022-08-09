@@ -5,3 +5,6 @@ _site
 vendor
 .bundle
 .DS_store
+**/.idea
+!.idea/runConfigurations/*.xml
+*.iml
