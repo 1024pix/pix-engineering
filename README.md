@@ -9,8 +9,8 @@ Pix IT team's [blog](https://engineering.pix.fr)
 #### Requirements
 
 - Git 2.25.0
-- Ruby 2.7.1
-- Bundler 2.1.4
+- Ruby 3.0
+- Bundler 2.2
 
 #### Instructions
 
