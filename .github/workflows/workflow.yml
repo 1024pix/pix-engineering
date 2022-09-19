@@ -2,9 +2,6 @@ name: test
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
 
@@ -13,20 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
-      - name: Install dependencies
-        run: bundle install
+          bundler-cache: true
+          ruby-version: '3.0'
       - name: Run tests (lint markdown)
         run: bundle exec mdl _posts
 
   lint-markdown-link:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           use-quiet-mode: 'yes'
