@@ -31,7 +31,7 @@ bundle exec jekyll serve
 ```
 git clone git@github.com:1024pix/pix-engineering.git
 cd pix-engineering
-docker compose up --detach
+docker-compose up --detach
 ```
 
 ## Usage
