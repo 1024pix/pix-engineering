@@ -2,6 +2,7 @@ version: '3'
 
 services:
   jekyll:
+    container_name: pix-engineering
     image: jekyll/jekyll:latest
     command: jekyll serve --watch --force_polling --verbose
     ports:
