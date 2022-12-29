@@ -9,7 +9,7 @@ cover:
 authors: francois_de_metz
 ---
 
-Le 23 juillet 2022 à 22h et jusqu'au 24 juillet à 17h, Pix était en maintenance. La raison ? Nous avons profité de la période de calme de l'été pour migrer l'identifiant primaire de l'une des tables de notre base de données de int à bigint. Cela fait suite à la [précédente migration d'août dernier]({% post_url 2021-08-31-modifier-type-clef-primaire-non-referencee-vers-biginit %}).
+Le 23 juillet 2022 à 22h et jusqu'au 24 juillet à 17h, Pix était en maintenance. La raison ? Nous avons profité de la période de calme de l'été pour migrer l'identifiant primaire de l'une des tables de notre base de données de int à bigint. Cela fait suite à la [précédente migration d'août dernier]({% post_url 2021-08-31-modifier-clef-primaire-non-referencee-type-bigint %}).
 
 Dans ce genre de moment, tout le monde doit être aligné. En effet pour que la migration se fasse, il faut s'assurer que l'ensemble des applications impactées soient en maintenance, que la base de données soit dans le bon état, lancer le script de migration, attendre (longtemps), vérifier le bon résultat, et relancer les applications.
 
