@@ -3,7 +3,7 @@ layout: post
 title:  "Passer une PK référencée du type INT en BIGINT"
 date:   2022-12-14 16:59:42 +0200
 categories: bdd
-excerpt: "Sur plusieurs tables volumineuses **avec** PostgreSQL"
+excerpt: "Sur plusieurs tables volumineuses avec PostgreSQL"
 cover:
   image: "change-referenced-pk-bigint.jpg"
   source_title: How to find foreign keys references
