@@ -153,7 +153,7 @@ Dans notre cas, la perspective d'obtenir des résultats encore plus accentués e
 
 ###### Migration des données dans une table séparée
 
-####### Exploration
+**Exploration**
 
 Prenons du recul sur le but: migrer les données en BIGINT sans modifier l'activité sur la table cible.
 
@@ -185,7 +185,7 @@ Nous sommes restés sur la solution `INSERT INTO` :
 - nous n'étions pas sûr du tri qui nous serait le plus bénéfique;
 - elle était la plus simple.
 
-####### Implémentation
+**Implémentation**
 
 Comme on travaille avec deux tables, pour garder l'intégrité des données, nous choisissons d'implémenter:
 
