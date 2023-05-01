@@ -65,7 +65,7 @@ La partie suivie de la mise en maintenance utilisait le [plugin net][], en véri
 
 Avant de lancer la migration, nous avions le nombre de connexions ouvertes a PostgreSQL affichées. Utile pour savoir si tout avait bien été éteint. La récupération se faisait avec le [plugin datadog](), qui récupérait les infos de [pix-db-stats][].
 
-Le suivi de la migration était plutôt minimale, parce que c'est PostgreSQL qui faisait le travail, sans réelle possibilité de connaitre de suivre précisémenet la progression. Mais nous pouvions monitorer les différentes étapes du script de migration, et ce sur les 2 bases à migrer simultanément. Pour cela le [plugin datadog][] regardait les logs générés par les conteneurs pour afficher l'étape en cours.
+Le suivi de la migration était plutôt minimale, parce que c'est PostgreSQL qui faisait le travail, sans réelle possibilité de connaitre de suivre précisément la progression. Mais nous pouvions monitorer les différentes étapes du script de migration, et ce sur les 2 bases à migrer simultanément. Pour cela le [plugin datadog][] regardait les logs générés par les conteneurs pour afficher l'étape en cours.
 
 ## Conclusion
 
