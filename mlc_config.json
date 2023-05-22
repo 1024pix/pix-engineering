@@ -5,6 +5,12 @@
     },
     {
       "pattern": "https://zhuanlan.zhihu.com/p/140799707"
+    },
+    {
+      "urls": [ "https://twitter.com" ],
+      "headers": {
+        "cookie": "guest_id=v1%3A168476512069608535"
+      }
     }
   ]
 }
