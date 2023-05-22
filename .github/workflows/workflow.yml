@@ -27,3 +27,5 @@ jobs:
         with:
           use-quiet-mode: 'yes'
           folder-path: '_posts'
+          base-branch: 'main'
+          check-modified-files-only: 'yes'
