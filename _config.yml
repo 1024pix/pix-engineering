@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Articles, actualités et aventures techniques des équipes Pix.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engineering.pix.fr" # the base hostname & protocol for your site, e.g. http://example.com
+rss: "feed"
 #twitter_username: pix_engineering
 github_username: 1024pix
 #paginate: 9
