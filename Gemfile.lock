@@ -224,6 +224,8 @@ GEM
       tomlrb
     mixlib-shellout (3.2.7)
       chef-utils
+    nokogiri (1.15.3-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.15.3-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.3-x86_64-linux)
@@ -270,6 +272,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-darwin-20
   x86_64-linux
 
