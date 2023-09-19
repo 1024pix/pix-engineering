@@ -3,7 +3,7 @@ layout: post
 title:  "Migrer de CommonJS vers ECMAScript Modules #1"
 date: 2023-08-25 09:49:00 +0200
 categories: javascript
-excerpt: "Récit d'une aventure : migrer 400kLoc NodeJs en deux mois - #1: les modules"
+excerpt: "Récit d'une aventure : migrer 400kLoc NodeJs en deux mois - #1: les enjeux"
 cover:
   image: "cjs-to-esm.png"
   source_url: https://raw.githubusercontent.com/wessberg/cjstoesm/master/documentation/asset/logo.png
@@ -22,7 +22,7 @@ Voilà, en entrée, le résumé du challenge à accomplir :
 - comprendre [la syntaxe ESM](#un-peu-de-syntaxe) ;
 - comment [modifier le code](#modifier-le-code) (la [syntaxe](#un-peu-de-syntaxe) est un pré-requis).
 
-Si vous êtes déjà familier avec tout ça, attendez plutôt la sortie de l'article [en plat principal](https://github.com/1024pix/pix-engineering/pull/42), à savoir comment nous avons mené la migration.
+Si vous êtes déjà familier avec tout ça, attendez plutôt la sortie de l'article [en plat principal]({%post_url 2023-08-25-migrer-de-commonjs-vers-esm %}), à savoir comment nous avons mené la migration.
 
 ## Une histoire de modules
 
