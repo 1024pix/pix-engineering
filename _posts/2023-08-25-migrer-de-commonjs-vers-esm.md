@@ -83,7 +83,7 @@ Cinq ans plus tard, en 2020, les navigateurs web et NodeJs (v12) l'ont implémen
 
 ## Pourquoi migrer en ESM ?
 
-La base de code Pix, créée en 2011, utilise le format CJS. Si le format qu'elle utilise est éprouvé, pourquoi migrer pour un système qui n'a que trois ans de support officiel ? La décision tient à une raison : faciliter le passage à Typescript.
+La base de code Pix, créée en 2016, utilise le format CJS. Si le format qu'elle utilise est éprouvé, pourquoi migrer pour un système qui n'a que trois ans de support officiel ? La décision tient à une raison : faciliter le passage à Typescript.
 
 Si vous n'êtes pas dans cette situation et cherchez ce que ESM pourrait vous apporter, nous conseillons [cet article](https://webreflection.medium.com/cjs-vs-esm-5f8b90a4511a), écrit par un membre de [l'équipe](https://github.com/nodejs/modules) qui a implémenté ESM dans NodeJS
 >  CJS vs ESM is not a war, rather a topic to talk even more about, once constraints and respective features are clear, as opposite of just taking a side out of habits, or effort needed, to move on (to ESM).
