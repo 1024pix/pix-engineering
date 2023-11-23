@@ -207,7 +207,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    mdl (0.12.0)
+    mdl (0.13.0)
       kramdown (~> 2.3)
       kramdown-parser-gfm (~> 1.1)
       mixlib-cli (~> 2.1, >= 2.1.1)
@@ -277,7 +277,7 @@ DEPENDENCIES
   github-pages
   jekyll-analytics
   jekyll-feed (~> 0.12)
-  mdl (= 0.12.0)
+  mdl (= 0.13.0)
   minima (~> 2.5)
   tzinfo (~> 2.0)
   tzinfo-data
