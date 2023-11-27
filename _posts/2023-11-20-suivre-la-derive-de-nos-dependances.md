@@ -1,7 +1,7 @@
 ---
 title: "Suivi de la dérive de nos dépendances"
 lang: fr
-date: 2023-11-23
+date: 2023-11-27
 excerpt: "Ou comment voir le retard des mises à jour à faire sur l'ensemble de nos applications."
 authors: francois_de_metz
 cover:
