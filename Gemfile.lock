@@ -225,6 +225,7 @@ GEM
       mixlib-config (>= 2.2.1, < 4)
       mixlib-shellout
     mercenary (0.3.6)
+    mini_portile2 (2.8.7)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
@@ -236,9 +237,8 @@ GEM
     mixlib-shellout (3.2.7)
       chef-utils
     mutex_m (0.2.0)
-    nokogiri (1.15.5-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.15.5-x86_64-linux)
+    nokogiri (1.15.5)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
@@ -279,7 +279,7 @@ GEM
     unf_ext (0.0.9.1)
     unicode-display_width (1.8.0)
     wdm (0.1.1)
-    webrick (1.8.1)
+    webrick (1.8.2)
 
 PLATFORMS
   x86_64-darwin-20
