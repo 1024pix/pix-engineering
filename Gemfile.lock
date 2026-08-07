@@ -42,6 +42,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-arm64-darwin)
     ffi (1.17.4-x86_64-darwin)
     ffi (1.17.4-x86_64-linux-gnu)
@@ -286,6 +287,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
   arm64-darwin-25
   x86_64-darwin-20
   x86_64-linux
