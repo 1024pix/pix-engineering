@@ -15,7 +15,7 @@ gem "minima", "~> 2.5"
 gem "github-pages", group: :jekyll_plugins
 # Jekyll 3.9.3 (pulled in by github-pages) is incompatible with the Fiber-local
 # level override added in logger 1.6+, which Ruby 3.3 ships as the default gem.
-gem "logger", "~> 1.5.3"
+gem "logger", "~> 1.7.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-analytics"
