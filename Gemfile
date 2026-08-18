@@ -13,6 +13,9 @@ gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
+# Jekyll 3.9.3 (pulled in by github-pages) is incompatible with the Fiber-local
+# level override added in logger 1.6+, which Ruby 3.3 ships as the default gem.
+gem "logger", "~> 1.5.3"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-analytics"
@@ -34,3 +37,6 @@ end
 gem "wdm", "~> 0.2.0", install_if: Gem.win_platform?
 
 gem "webrick", "~> 1.7"
+
+# csv is no longer a default gem starting from Ruby 3.4.0.
+gem "csv"

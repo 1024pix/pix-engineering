@@ -9,8 +9,8 @@ Pix IT team's [blog](https://engineering.pix.fr)
 #### Requirements
 
 - Git 2.25.0
-- Ruby 3.0
-- Bundler 2.2
+- Ruby 3.3.6
+- Bundler 4.0
 
 #### Instructions
 
@@ -46,13 +46,13 @@ You can access application at http://localhost:4000
 **1/** Create a new file called `<user_id>.yml` (with `user_id` is the concatenation of `<firstname>_<lastname>`) in folder `/_data/authors`:
 
 ```yaml
-# /_data/authors/jeremy_buget.yml
-name: Jérémy Buget
-description: CTO
+# /_data/authors/firstname_lastname.yml
+name: FirstName LastName
+description: Developer
 links:
-  github: jbuget
-  twitter: jbuget
-  website: https://jbuget.fr
+  github: github_username
+  twitter: twitter_username
+  website: https://yourwebsite.com
 ```
 
 **2/** Add the user's picture in `/assets/images/authors/<user_id>.png`.
@@ -68,12 +68,12 @@ In the post's front matter, add a property `authors`, that could be a string (`u
 authors:
 
 # Single author
-authors: jeremy_buget
+authors: firstname_lastname
 
 # Multiple authors
 authors:
-  - jeremy_buget
-  - melanie_boudard
+  - firstname_lastname
+  - firstname2_lastname2
 ```
 
 ## License

@@ -25,6 +25,7 @@ GEM
     commonmarker (0.23.10)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
+    csv (3.3.6)
     dnsruby (1.70.0)
       simpleidn (~> 0.2.1)
     drb (2.2.0)
@@ -41,7 +42,10 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.16.3)
+    ffi (1.17.4-aarch64-linux-gnu)
+    ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (228)
@@ -218,6 +222,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.5.3)
     mdl (0.13.0)
       kramdown (~> 2.3)
       kramdown-parser-gfm (~> 1.1)
@@ -282,13 +287,17 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
+  arm64-darwin-25
   x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
+  csv
   github-pages
   jekyll-analytics
   jekyll-feed (~> 0.12)
+  logger (~> 1.5.3)
   mdl (= 0.13.0)
   minima (~> 2.5)
   tzinfo (~> 2.0)
@@ -297,4 +306,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.33
+  4.0.18
