@@ -3,7 +3,7 @@ version: '3'
 services:
   jekyll:
     container_name: pix-engineering
-    image: jekyll/jekyll:latest
+    image: jekyll/jekyll:latest@sha256:f0ccb9842a530181f73fe2b126a01634810a52ec6667c4b804d9d09432eadf4a
     command: bash -c "bundle install && bundle exec jekyll serve --watch --force_polling --verbose -H 0.0.0.0"
     ports:
       - 4000:4000
