@@ -8,8 +8,8 @@ jobs:
   lint-markdown-link:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: gaurav-nelson/github-action-markdown-link-check@5c5dfc0ac2e225883c0e5f03a85311ec2830d368 # v1
         with:
           use-quiet-mode: 'yes'
           folder-path: '_posts'
